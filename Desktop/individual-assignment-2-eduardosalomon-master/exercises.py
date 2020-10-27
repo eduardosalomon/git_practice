@@ -29,5 +29,18 @@ print(handle_errors_validate_form(form))
     
 
 
+#%%
+# ASSIGNMENT 2
+def validate_user_score(score):
+    if score != float:
+        raise TypeError("score must be a float")
+    if score < 5:
+        raise ValueError("user failed: score too low")
+    if score > 10:
+        raise ValueError("user failed for cheating: score too high")
+    return score
+
+
+
 
 
